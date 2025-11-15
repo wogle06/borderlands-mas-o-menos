@@ -61,13 +61,17 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* Sections */
+/* Generic sections */
 
 .intro,
 .audio-section,
 .poem-section,
 .doc-intro,
-.map-intro {
+.map-intro,
+.visual-intro,
+.statement-intro,
+.artist-body,
+.bibliography-intro {
   margin-bottom: 2rem;
 }
 
@@ -160,66 +164,15 @@ blockquote {
   margin-bottom: 0.75rem;
 }
 
-/* Artist statement */
-
-.artist-intro {
-  margin-bottom: 1.5rem;
-}
-
-.artist-body {
-  background-color: #ffffff;
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
-}
-
-.artist-body p {
-  margin-bottom: 0.9rem;
-  color: #111827;
-}
-
-/* Bibliography */
-
-.bibliography-list {
-  margin-top: 1.5rem;
-}
-
-.bib-entry {
+.map-quote {
   margin-bottom: 0.75rem;
-  line-height: 1.5;
-  color: #111827;
 }
 
-/* Footer */
-
-.site-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.85rem;
-  color: #6b7280;
-  border-top: 1px solid #e5e7eb;
-  background-color: #f9fafb;
-}
-/* Bibliography formatting */
-.bibliography-list {
-  margin-top: 1.5rem;
-}
-
-.bib-entry {
-  margin-bottom: 1rem;
-  padding-left: 1.5rem;
-  text-indent: -1.5rem; /* creates hanging indent */
-  line-height: 1.5;
-}
 /* Visual essay */
-
-.visual-intro {
-  margin-bottom: 2rem;
-}
 
 .visual-grid {
   display: grid;
-  gap: 1.75rem;
+  gap: 2rem;
   margin-top: 1rem;
 }
 
@@ -228,6 +181,10 @@ blockquote {
   padding: 1.25rem 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+}
+
+.visual-item figure {
+  margin: 0;
 }
 
 .visual-item img {
@@ -244,6 +201,79 @@ blockquote {
 
 .visual-caption p {
   font-size: 0.95rem;
-  color: #4b5563;
+  color: #374151;
+}
+
+/* Artist statement */
+
+.artist-body p {
+  margin-bottom: 1rem;
+  font-size: 0.98rem;
+  color: #1f2933;
+}
+
+/* Bibliography */
+
+.bibliography-list {
+  margin-top: 1.25rem;
+}
+
+.bib-entry {
+  margin-bottom: 0.7rem;
+  padding-left: 1.25rem;
+  text-indent: -1.25rem; /* hanging indent */
+  font-size: 0.96rem;
+}
+
+/* Archive */
+
+.archive-grid {
+  display: grid;
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.archive-item {
+  background-color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
+}
+
+.archive-item h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+}
+
+.archive-image-wrapper {
   margin-bottom: 0.75rem;
+}
+
+.archive-image-wrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.archive-meta {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.35rem;
+}
+
+.archive-caption {
+  font-size: 0.95rem;
+  color: #374151;
+}
+
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+  border-top: 1px solid #e5e7eb;
+  background-color: #f9fafb;
 }
