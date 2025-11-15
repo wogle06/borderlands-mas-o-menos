@@ -225,13 +225,13 @@ blockquote {
   font-size: 0.96rem;
 }
 
-/* Archive */
+/* Photo Archive */
 
-.archive-intro {
+.photo-intro {
   margin-bottom: 1.5rem;
 }
 
-.archive-grid {
+.photo-grid {
   display: grid;
   gap: 1.75rem;
   margin-top: 0.5rem;
@@ -239,45 +239,40 @@ blockquote {
 
 /* Two columns on bigger screens, single column on mobile */
 @media (min-width: 800px) {
-  .archive-grid {
+  .photo-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-.archive-item {
+.photo-item {
   background-color: #ffffff;
   padding: 1.25rem 1.5rem;
   border-radius: 0.75rem;
   box-shadow: 0 2px 10px rgba(15, 23, 42, 0.06);
 }
 
-.archive-item h2 {
-  font-size: 1.05rem;
-  margin-bottom: 0.5rem;
+.photo-item figure {
+  margin: 0;
 }
 
-.archive-image-wrapper {
-  margin-bottom: 0.75rem;
-}
-
-/* Keep photos from blowing up too large */
-.archive-image-wrapper img {
+.photo-item img {
   width: 100%;
   max-height: 320px;
   object-fit: cover;
   border-radius: 0.5rem;
   display: block;
+  margin-bottom: 0.75rem;
 }
 
-.archive-meta {
-  font-size: 0.85rem;
-  color: #6b7280;
-  margin-bottom: 0.35rem;
+.photo-item h2 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
 }
 
-.archive-caption {
+.photo-item figcaption p {
   font-size: 0.95rem;
   color: #374151;
+  margin-bottom: 0.5rem;
 }
 
 /* Footer */
