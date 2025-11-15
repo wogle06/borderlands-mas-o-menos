@@ -227,10 +227,21 @@ blockquote {
 
 /* Archive */
 
+.archive-intro {
+  margin-bottom: 1.5rem;
+}
+
 .archive-grid {
   display: grid;
   gap: 1.75rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Two columns on bigger screens, single column on mobile */
+@media (min-width: 800px) {
+  .archive-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .archive-item {
@@ -249,9 +260,11 @@ blockquote {
   margin-bottom: 0.75rem;
 }
 
+/* Keep photos from blowing up too large */
 .archive-image-wrapper img {
   width: 100%;
-  height: auto;
+  max-height: 320px;
+  object-fit: cover;
   border-radius: 0.5rem;
   display: block;
 }
